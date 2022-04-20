@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import {productCard, name, price, description} from './styles.module.scss'
+import {productCard, name, price, description, info} from './styles.module.scss'
 
 function ProductCard ({children, product, ...props})  {
   const {productName, productPrice, productDescription, imageUrl, key}= {...product}
@@ -14,11 +14,12 @@ function ProductCard ({children, product, ...props})  {
         height={280}
         quality={50}
       />
-      
     </header>
-    <h2 className={name}>{productName}</h2>
-    <p className={price}>${productPrice}</p>
-    <p className={description}>{productDescription}</p>
+    <div className={info}>
+      <h2 className={name}>{productName}</h2>
+      <p className={price}>${productPrice}</p>
+      <p className={description}>{productDescription}</p>
+    </div>
     <footer>
       <form action="api/checkout" method="POST">
         <input type="hidden" name="uid" value={key}/>
