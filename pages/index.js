@@ -17,10 +17,10 @@ export default function Home(props) {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="description" content="speck eyewear provides all kinds of glasses for everyone."/>
-      <title>Storefront</title>
+      <title>speck eyewear</title>
 
     </Head>
-      <PageTitle title="Storefront" tagline="featured products"/>
+      <PageTitle title="speck eyewear" tagline="featured products"/>
       <main className={store}>
         <div className={productsList}>
           {products.map(product=><ProductCard product={product} key={product.key} />)}
