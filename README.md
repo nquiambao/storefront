@@ -8,4 +8,4 @@ Using [Vercel](https://vercel.com/), [Stripe](https://stripe.com/), and [Firebas
 ***Currently using test keys!***
 
 ## Visit the website!
-[View store front here.](https://speck-storefront.vercel.app/)
+[View storefront here.](https://speck-storefront.vercel.app/)
