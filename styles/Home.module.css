@@ -114,3 +114,33 @@
     flex-direction: column;
   }
 }
+
+.store {
+  padding-bottom: 4rem;
+}
+
+.productsList {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .productsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .productsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productsList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
